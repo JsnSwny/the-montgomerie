@@ -385,6 +385,34 @@ body, html {
     width: 300px;
     height: 300px;
   }
+  .hero-inner > img {
+    width: 270px;
+    height: 270px;
+  }
+  .opening-inner {
+    width: 100%;
+  }
+  .opening-content {
+    padding: 10px;
+  }
+  .strike {
+    font-size: 26px;
+  }
+  .festive-container h5 {
+    font-size: 16px;
+  }
+  .festive-menus {
+    width: 100%;
+  }
+  .festive-menus > a > h4 {
+    font-size: 22px;
+  }
+  .header h4 {
+    font-size: 16px;
+  }
+  .header h5 {
+    font-size: 14px;
+  }
 }
 
 

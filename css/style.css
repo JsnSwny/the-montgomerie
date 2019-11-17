@@ -420,6 +420,9 @@ body, html {
   .header h5 {
     font-size: 14px;
   }
+  .contact-content {
+    margin: 10px 0;
+  }
 }
 
 

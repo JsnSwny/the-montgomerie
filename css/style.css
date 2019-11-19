@@ -39,6 +39,48 @@ body, html {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+/* Scroll Circle */
+
+.scroll-circle {
+  
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: rgb(255, 255, 255);
+  font-size: 40px;
+  font-weight: bold;
+  color: black;
+  border-radius: 50%;
+  bottom: 30px;
+  animation: move 5s ease-in-out infinite;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 10px 8px -2px rgba(0,0,0,0.47);
+  -moz-box-shadow: 0px 10px 8px -2px rgba(0,0,0,0.47);
+  box-shadow: 0px 10px 8px -2px rgba(0,0,0,0.47);
+  
+}
+
+
+.scroll-circle:hover {
+  background-color: rgb(130, 180, 83);
+  color: white;
+}
+
+@keyframes move {
+  25% {
+    transform: translateY(10px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  75% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
 /* Header */
 
 .header {
@@ -117,6 +159,8 @@ body, html {
   align-self: center;
   text-align: center;
   color: white;
+
+
   -webkit-box-shadow: 0px 10px 8px -2px rgba(0,0,0,0.47);
   -moz-box-shadow: 0px 10px 8px -2px rgba(0,0,0,0.47);
   box-shadow: 0px 10px 8px -2px rgba(0,0,0,0.47);
@@ -220,7 +264,6 @@ body, html {
 .festive-menus > a:hover {
   cursor: pointer;
   background-color: rgb(196, 47, 47);
-  color: rgb(255, 156, 98);
   border: 2px rgb(30, 119, 34) dotted;
 }
 
@@ -423,47 +466,12 @@ body, html {
   .contact-content {
     margin: 10px 0;
   }
+  .scroll-circle {
+    width: 40px;
+    height: 40px;
+    font-size: 26px;
+  }
+
 }
 
 
-/* Scroll Circle */
-
-.scroll-circle {
-  
-  position: absolute;
-  width: 60px;
-  height: 60px;
-  background-color: rgb(255, 255, 255);
-  font-size: 40px;
-  font-weight: bold;
-  color: black;
-  border-radius: 50%;
-  bottom: 10%;
-  animation: move 5s ease-in-out infinite;
-  cursor: pointer;
-  -webkit-box-shadow: 0px 10px 8px -2px rgba(0,0,0,0.47);
-  -moz-box-shadow: 0px 10px 8px -2px rgba(0,0,0,0.47);
-  box-shadow: 0px 10px 8px -2px rgba(0,0,0,0.47);
-  
-}
-
-
-.scroll-circle:hover {
-  background-color: rgb(130, 180, 83);
-  color: white;
-}
-
-@keyframes move {
-  25% {
-    transform: translateY(10px);
-  }
-  50% {
-    transform: translateY(0px);
-  }
-  75% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
-}

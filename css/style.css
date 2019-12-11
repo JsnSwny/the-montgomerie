@@ -6,6 +6,8 @@ body, html {
     background-color: rgb(22, 22, 22);
     color: white;
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 
@@ -23,12 +25,9 @@ body, html {
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    padding-bottom: 30px;
-    padding-top: 90px;
   }
 
 .hero-inner {
-    margin-bottom: 50px;
     width: 100%;
 }
 
@@ -109,7 +108,6 @@ body, html {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../media/mont-2.jpg");
   color: white;
   height: auto;
-  padding-bottom: 100px;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -227,7 +225,6 @@ body, html {
 
 .festive-container {
   background-color: rgb(255, 82, 82);
-  padding-top: 1px;
   border-top: 6px rgb(30, 119, 34) dashed;
   border-bottom: 6px rgb(30, 119, 34) dashed;
   text-align: center;
@@ -237,7 +234,6 @@ body, html {
   display: inline-flex;
   width: 80%;
   justify-content: space-around;
-  margin-bottom: 100px;
   margin-top: 50px;
 }
 
@@ -304,6 +300,10 @@ body, html {
   font-weight: bold;
 }
 
+.section-container {
+  padding: 80px 0;
+}
+
 #gmap_canvas, .gmap_canvas, .gmap_canvas {
   width: 700px;
   height: 400px;
@@ -311,6 +311,7 @@ body, html {
 .mapouter, .gmap_canvas {
   margin: 0 auto;
 }
+
 
 
 /* Heading Strikes and Line Breaks */
@@ -348,28 +349,18 @@ body, html {
   margin-left: 15px;
 }
 
-.linebreak {
-  display: block;
-  font-size: 36px;
-  width: 5%;
-  height: 2px;
-  background-color: rgb(194, 194, 194);
-  margin: 0 auto;
-  margin-top: 40px;
-}
-
-
 /* Footer */
 
-.footer {
-  margin-top: 50px;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 10px;
-  background-color: #000000;
-  color: rgb(184, 184, 184);
+footer {
+  background-color: rgb(31, 31, 31);
+  color: white;
+  padding: 15px 0;
   text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: rgb(255, 154, 1);
 }
 
 

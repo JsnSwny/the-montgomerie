@@ -1,68 +1,64 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:300,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap");
 
-body, html {
-    height: 100%;
-    font-family: Montserrat;
-    background-color: rgb(22, 22, 22);
-    color: white;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body,
+html {
+  height: 100%;
+  font-family: "Raleway", sans-serif;
+  /* background-color: rgb(22, 22, 22); */
+  margin: 0;
+  padding: 0;
+  color: rgb(24, 24, 24);
+  box-sizing: border-box;
 }
-
 
 /* Hero */
 
 .hero {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../media/mont.jpg");
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-  }
+  width: 100%;
+  min-height: 500px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../media/mont.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+}
 
 .hero-inner {
-    width: 100%;
+  width: 100%;
 }
 
 .hero-inner > img {
-    width: 400px;
-    height: 400px;
-    border-radius: 50%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* Scroll Circle */
 
 .scroll-circle {
-  
   position: absolute;
-  width: 60px;
-  height: 60px;
-  background-color: rgb(255, 255, 255);
-  font-size: 40px;
+  font-size: 60px;
   font-weight: bold;
-  color: black;
-  border-radius: 50%;
-  bottom: 30px;
+  color: white;
+  bottom: 50px;
   animation: move 5s ease-in-out infinite;
   cursor: pointer;
-  -webkit-box-shadow: 0px 10px 8px -2px rgba(0,0,0,0.47);
-  -moz-box-shadow: 0px 10px 8px -2px rgba(0,0,0,0.47);
-  box-shadow: 0px 10px 8px -2px rgba(0,0,0,0.47);
-  
+  transition: 0.2s color ease-in-out;
+  -webkit-box-shadow: 0px 10px 8px -2px rgba(0, 0, 0, 0.47);
+  -moz-box-shadow: 0px 10px 8px -2px rgba(0, 0, 0, 0.47);
+  box-shadow: 0px 10px 8px -2px rgba(0, 0, 0, 0.47);
 }
 
-
 .scroll-circle:hover {
-  background-color: rgb(130, 180, 83);
-  color: white;
+  color: #82b453;
 }
 
 @keyframes move {
@@ -84,14 +80,13 @@ body, html {
 
 .header {
   width: 100%;
-  color: black;
-  text-transform: uppercase;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   letter-spacing: 3px;
   background-color: rgba(255, 106, 106, 0.8);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  text-align: center;
-  padding-bottom: 5px;
-  padding-top: 10px;
   position: fixed;
   z-index: 99;
   color: white;
@@ -101,18 +96,30 @@ body, html {
   font-size: 18px;
 }
 
+.header a {
+  transition: 0.2s ease-in-out color;
+}
+
+.header a:hover {
+  color: rgb(0, 0, 0);
+}
 
 /* Opening Section */
 
 .opening-container {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../media/mont-2.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../media/mont-2.jpg");
   color: white;
-  height: auto;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  border-bottom: solid 5px rgb(255, 82, 82);
+  /* border-bottom: solid 5px rgb(255, 82, 82); */
 }
 
 .opening-inner {
@@ -140,86 +147,42 @@ body, html {
   font-size: 20px;
 }
 
-
 /* Food Section */
 
 .food-inner {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 1400px;
+  width: 100%;
   margin: 0 auto;
-  grid-gap: 2em;
-  width: 80%;
-  margin-top: 40px;
 }
 
 .cards {
-  background-color: rgb(132, 185, 119);
-  height: 500px; 
-  align-self: center;
-  text-align: center;
-  color: white;
-
-
-  -webkit-box-shadow: 0px 10px 8px -2px rgba(0,0,0,0.47);
-  -moz-box-shadow: 0px 10px 8px -2px rgba(0,0,0,0.47);
-  box-shadow: 0px 10px 8px -2px rgba(0,0,0,0.47);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
 }
 
-.cards:nth-child(odd) {
-  height: 420px;
-}
-
-.cards > h1, h3 {
-  margin: 20px;
-  position: relative;
-  top: 25%;
-}
-
-
-.cards > h1 {
-  font-size: 45px;
+.cards h2 {
   font-weight: bold;
+  margin-top: 30px;
 }
 
-.cards > a {  
-  width: 60%;
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-  font-size: 20px;
-  letter-spacing: 2px;
-  padding: 12px;
-  border: 1px solid rgb(209, 209, 209);
-  background-color: rgba(49, 49, 49, 0.5);
-  transition: all 0.5s ease;
-  display: block;
-  position: relative;
-  top: 30%;
-  margin: 0 auto;
+.cards p {
+  margin-top: 10px;
+  line-height: 25px;
 }
 
-.cards > a:hover {  
-  background-color: rgba(29, 29, 29, 0.7);
-  border: 1px solid rgb(130, 180, 83);
-}
-
-.cards:nth-child(1), .cards:nth-child(2), .cards:nth-child(3) {
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
+.cards__image {
   background-size: cover;
+  background-position: center;
+  width: 400px;
+  height: 300px;
 }
-
-.cards:nth-child(1) {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../media/steak.jpg");
-}
-
-.cards:nth-child(2) {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../media/golfer.jpg");
-}
-
-.cards:nth-child(3) {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../media/carvery.jpg");
-}
-
 
 /* Festive Section */
 
@@ -244,10 +207,10 @@ body, html {
   background-color: rgb(177, 55, 55);
   padding: 100px 50px;
   margin: 20px;
-  
-  -webkit-box-shadow: 0px 10px 8px -2px rgba(0,0,0,0.47);
-  -moz-box-shadow: 0px 10px 8px -2px rgba(0,0,0,0.47);
-  box-shadow: 0px 10px 8px -2px rgba(0,0,0,0.47);
+
+  -webkit-box-shadow: 0px 10px 8px -2px rgba(0, 0, 0, 0.47);
+  -moz-box-shadow: 0px 10px 8px -2px rgba(0, 0, 0, 0.47);
+  box-shadow: 0px 10px 8px -2px rgba(0, 0, 0, 0.47);
   border: 2px rgb(255, 255, 255) dotted;
   transition: all 0.5s ease;
 }
@@ -268,11 +231,10 @@ body, html {
   color: rgb(255, 156, 98);
 }
 
-
 /* Contact Section */
 
 .contact-container {
-  border-top: solid 5px rgb(255, 82, 82);
+  /* border-top: solid 5px rgb(255, 82, 82); */
 }
 
 .contact-inner {
@@ -283,6 +245,7 @@ body, html {
   display: inline-block;
   width: 300px;
   margin: 0 50px;
+  margin-top: 50px;
 }
 
 .contact-content i {
@@ -301,18 +264,21 @@ body, html {
 }
 
 .section-container {
-  padding: 80px 0;
+  padding: 120px 0;
 }
 
-#gmap_canvas, .gmap_canvas, .gmap_canvas {
-  width: 700px;
-  height: 400px;
+#gmap_canvas,
+.gmap_canvas,
+.gmap_canvas {
+  width: 100%;
+  height: 500px;
+  margin-bottom: 100px;
+  padding: 0 20px;
 }
-.mapouter, .gmap_canvas {
+.mapouter,
+.gmap_canvas {
   margin: 0 auto;
 }
-
-
 
 /* Heading Strikes and Line Breaks */
 
@@ -320,7 +286,7 @@ body, html {
   display: block;
   text-align: center;
   overflow: hidden;
-  white-space: nowrap; 
+  white-space: nowrap;
   font-size: 36px;
 }
 
@@ -363,21 +329,109 @@ footer a {
   color: rgb(255, 154, 1);
 }
 
+.safety-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../media/mont-2.jpg");
+  color: white;
+  height: auto;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.safety-section img {
+  max-width: 600px;
+  width: 100%;
+  padding: 0 20px;
+  margin: 100px 0;
+}
+
+.banner {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../media/covid-image.jpg");
+  width: 100%;
+  height: 300px;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.banner > h1 {
+  font-size: 72px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.banner button {
+  margin-top: 20px;
+}
+
+.btn-1 {
+  background-color: #82b453;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  padding: 10px 25px;
+  transition: 0.2s ease-in-out background-color;
+}
+
+button:focus {
+  outline: none;
+}
+
+a {
+  text-decoration: none !important;
+  color: inherit;
+}
+
+.btn-1 button a:hover {
+  color: white;
+}
+
+.btn-1:hover {
+  background-color: #93c861;
+}
+
+.covid-section {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+  background-color: white;
+}
+
+.covid-section > div {
+  max-width: 800px;
+  width: 100%;
+  font-size: 18px;
+  line-height: 30px;
+  margin: 0 20px;
+}
+
+.covid-section {
+  font-weight: bold;
+}
+
+.covid-section li {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.covid-section ul {
+  margin-top: 20px;
+}
 
 /* Media Queries */
 
 @media only screen and (max-width: 1300px) {
-  .cards > h1 {
-    font-size: 32px;
-  }
-  .cards > h3 {
-    font-size: 18px;
-  }
-  .cards > a {
-    top: 25%;
-    font-size: 16px;
-    width: 80%;
-  }
   .opening-inner {
     grid-template-columns: 1fr;
   }
@@ -397,22 +451,13 @@ footer a {
 }
 
 @media only screen and (max-width: 720px) {
-  .food-inner {
-    display: inline-block;
-    width: 100%;
+  .banner > h1 {
+    font-size: 48px;
   }
-  .cards, .cards:nth-child(odd) {
-    margin: 30px 30px;
-    height: 400px;
-    margin-top: 0;
+  .hero {
+    align-items: flex-start;
   }
-  .cards > h1, h3 {
-    top: 35%;
-  }
-  .cards > a {
-    top: 35%;
-    width: 60%;
-  }
+
   .opening-content > h1 {
     font-size: 30px;
   }
@@ -421,20 +466,18 @@ footer a {
   }
 
   #gmap_canvas {
-    width: 300px;
     height: 300px;
   }
   .mapouter {
-    width: 300px;
     height: 300px;
   }
   .gmap_canvas {
-    width: 300px;
     height: 300px;
   }
   .hero-inner > img {
     width: 270px;
     height: 270px;
+    margin-top: 100px;
   }
   .opening-inner {
     width: 100%;
@@ -464,11 +507,6 @@ footer a {
     margin: 10px 0;
   }
   .scroll-circle {
-    width: 40px;
-    height: 40px;
-    font-size: 26px;
+    font-size: 50px;
   }
-
 }
-
-

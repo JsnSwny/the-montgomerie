@@ -10,10 +10,12 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="media/css/all.css">
 
     <link rel="icon" type="image/png" href="media/montlogo.jpg" />
     <script type="text/javascript"> (function() { var css = document.createElement('link'); css.href = 'https://use.fontawesome.com/releases/v5.1.0/css/all.css'; css.rel = 'stylesheet'; css.type = 'text/css'; document.getElementsByTagName('head')[0].appendChild(css); })(); </script>
     <link href='https://fonts.googleapis.com/css?family=Niconne' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <script
         src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
@@ -24,8 +26,9 @@
 </head>
 <body>
     <!-- Header -->
+    
     <div class="header">
-        <h4>Phone to Book a Table<br></h4><h5>01467 672861</h5>
+        <h4><a href="covid.html">View our Covid-19 Safety Measures</a></h4>
     </div>
 
     <!-- Hero -->
@@ -33,7 +36,7 @@
         <div class="hero-inner">
             <img src="media/montlogo.jpg">
         </div>
-        <div onclick="scrollDown()" class="scroll-circle">↓</div>
+        <i onclick="scrollDown()" class="fas fa-arrow-circle-down scroll-circle"></i>
     </div>
 
     <!-- Food Section -->
@@ -43,17 +46,27 @@
         </div>
         <div class="food-inner">
             <div class="cards">
-                <h1 >Steak Night</h1>
-                <h3>EVERY SATURDAY <br> <br> TWO STEAKS AND BOTTLE OF WINE FOR £32.50</h3>
+                <div style="background-image:url('../media/golfer.jpg');" class="cards__image"></div>
+                <h2>Full Menu</h2>
+                <p>Check out our full menu</p>
+                <a href="media/menu.pdf" target="_blank"><button class="btn-1">View Menu</button></a>
             </div>
             <div class="cards">
-                <h1>Full Menu</h1>
-                <a href="media/menu.pdf" target="_blank">View Menu</a>
+                <div style="background-image:url('../media/takeaway.jpg');" class="cards__image"></div>
+                <h2>Takeaway Menu</h2>
+                <p>Want to order to takeaway? See our takeaway menu</p>
+                <a href="media/takeawaymenu.pdf" target="_blank"><button class="btn-1">View Menu</button></a>
             </div>
+            <!-- <div class="cards">
+                <div style="background-image:url('../media/steak.jpg');" class="cards__image"></div>
+                <h2>Steak Night</h2>
+                <p>Currently not running due to COVID-19</p>
+                
+            </div> -->
             <div class="cards">
-                <h1>Carvery</h1>
-                <h3>EVERY SUNDAY <br> <br> FOR £14.50<br>
-                SERVED UNTIL 7PM</h3>
+                <div style="background-image:url('../media/carvery.jpg');" class="cards__image"></div>
+                <h2>Sunday Roast (£13.95)</h2>
+                <p>Currently not running due to COVID-19</p>
             </div>
         </div>   
     </div>
@@ -66,20 +79,20 @@
         <div class="opening-inner">
             <div class="opening-content">
                 <h1>RESTAURANT</h1>
-                <p>Sunday - Thursday<br>(10:00-20:00)</p>
-                <p>Friday - Saturday<br>(10:00-20:00)</p>
+                <p>Monday - Friday<br>(12:00 - 14:00) (17:00 - 20:00)</p>
+                <p>Saturday - Sunday<br>(11:00 - 19:00)</p>
             </div>
 
             <div class="opening-content">
                 <h1>BAR</h1>
-                <p>Sunday - Thursday<br>(10:00-22:00)</p>
-                <p>Friday - Saturday<br>(10:00-00:00)</p>
+                <p>Monday - Friday<br>(12:00 - 14:00) (17:00 - 20:00)</p>
+                <p>Saturday - Sunday<br>(11:00 - 19:00)</p>
             </div>
         </div>
     </div>
 
     <!-- Festive Section -->
-    <div class="festive-container section-container">
+    <!-- <div class="festive-container section-container">
         <div class="strike">
             <span>Festive Menu<br>and Party Nights</span>
         </div>
@@ -92,7 +105,7 @@
             <a href="media/christmasmenu.pdf" target="_blank"><h4>Festive Menu</h4></a>
             <a href="media/newyearmenu.pdf" target="_blank"><h4>Hogmany Menu</h4></a>
         </div>
-    </div>
+    </div> -->
 
 
     <!-- Contact Section -->
@@ -116,16 +129,20 @@
             </div>
 
             <!-- <span class="linebreak"></span> -->
-            <h4 style="margin-top: 10px; margin-bottom: 20px;"><i class="fas fa-map-marker-alt fa-2x"></i></h4>
+            <h4 style="margin-top: 100px; margin-bottom: 20px;"><i style="margin-bottom: 20px;" class="fas fa-map-marker-alt fa-2x"></i></h4>
             <div class="find-map">
                 <div class="mapouter"><div class="gmap_canvas"><iframe id="gmap_canvas" src="https://maps.google.com/maps?q=Davah%20Wood%2C%20Blackhall%20Road%2C%20Inverurie%20AB51%205JB&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.maps-erstellen.de"></a></div><style>.mapouter{position:relative;text-align:right;}.gmap_canvas {overflow:hidden;background:none!important;}</style></div>    </div>
             </div>
         </div>
     </div>
 
+    <div class="safety-section">
+        <img src="media/safety.jpg">
+    </div>
+
     <!-- Footer -->
     <footer>
-        <small>Site Designed by <a href="mailto:jsnswny@gmail.com">Jason Sweeney</a></small>
+        <small>Site Designed by <a href="https://www.facebook.com/sweeneysolutionsuk">Jason Sweeney</a></small>
     </footer>
 
     <script src="main.js"></script>

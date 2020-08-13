@@ -105,8 +105,7 @@ html {
 /* Opening Section */
 
 .opening-container {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("../media/mont-2.jpg");
+  background-color: #80bbc3;
   color: white;
   height: 700px;
   display: flex;
@@ -121,19 +120,18 @@ html {
 }
 
 .opening-inner {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
   margin: 0 auto;
-  width: 80%;
+  max-width: 1000px;
+  width: 100%;
 }
 
 .opening-content {
-  margin: 30px;
-  background-color: rgba(128, 128, 128, 0.158);
-  padding: 20px 30px;
+  margin: 10px;
+  padding: 50px 30px;
   text-align: center;
-  border: 1px rgb(153, 153, 153) solid;
-  border-radius: 10px;
 }
 
 .opening-content > h1 {
@@ -142,7 +140,7 @@ html {
 }
 
 .opening-content > p {
-  font-size: 20px;
+  font-size: 24px;
 }
 
 /* Food Section */
@@ -252,6 +250,11 @@ html {
 
 .contact-content i {
   margin-bottom: 5px;
+  color: #80bbc3;
+}
+
+.fa-map-marker-alt {
+  color: #80bbc3;
 }
 
 .contact-inner > h3 {
@@ -261,7 +264,7 @@ html {
 }
 
 .contact-inner h3 > span {
-  color: rgb(255, 181, 44);
+  color: #80bbc3;
   font-weight: bold;
 }
 
@@ -289,7 +292,7 @@ html {
   text-align: center;
   overflow: hidden;
   white-space: nowrap;
-  font-size: 36px;
+  font-size: 48px;
 }
 
 .strike > span {
@@ -335,8 +338,6 @@ footer a {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("../media/mont-2.jpg");
   color: white;
   height: auto;
   background-position: 50% 50%;
@@ -434,10 +435,6 @@ a {
 /* Media Queries */
 
 @media only screen and (max-width: 1300px) {
-  .opening-inner {
-    grid-template-columns: 1fr;
-  }
-
   .festive-menus {
     display: inline-block;
   }
@@ -468,7 +465,7 @@ a {
     font-size: 30px;
   }
   .opening-content > p {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   #gmap_canvas {
@@ -492,7 +489,7 @@ a {
     padding: 10px;
   }
   .strike {
-    font-size: 26px;
+    font-size: 36px;
   }
   .festive-container h5 {
     font-size: 16px;

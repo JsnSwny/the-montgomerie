@@ -13,6 +13,39 @@ html {
 
 /* Hero */
 
+.top-header {
+  padding: 20px 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  background: white;
+  left: 0;
+  right: 0;
+  align-items: center;
+  font-size: 18px;
+  flex-wrap: wrap;
+  border-bottom: 2px #494949 solid;
+  text-align: center;
+}
+
+.top-header__section {
+  display: flex;
+  margin-top: 10px;
+}
+
+.top-header > div > div > i {
+  margin-right: 10px;
+  font-size: 24px;
+}
+
+.top-header > div > div {
+  margin: 0 20px;
+}
+
 .hero {
   width: 100%;
   min-height: 500px;

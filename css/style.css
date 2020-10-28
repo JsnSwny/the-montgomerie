@@ -40,7 +40,6 @@ html {
 
 .top-header__section {
   display: flex;
-  margin-top: 10px;
 }
 
 .top-header > div > div > i {
